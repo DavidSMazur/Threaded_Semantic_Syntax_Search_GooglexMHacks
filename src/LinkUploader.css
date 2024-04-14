@@ -1,0 +1,44 @@
+.link-uploader-container {
+    padding: 20px;
+}
+
+.url-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.url-label {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.url-input {
+    flex: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #555;
+}
+
+.url-input::placeholder {
+    color: #ddd;
+}
+
+.send-button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(148, 114, 222) !important;
+    border-color: rgb(148, 114, 222) !important;;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

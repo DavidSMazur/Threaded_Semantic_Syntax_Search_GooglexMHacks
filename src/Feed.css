@@ -1,0 +1,83 @@
+.feed {
+    position: relative;
+    overflow-y: auto; /* Show scrollbar only when needed */
+    height: 55vh; /* Adjust the height as needed */
+    padding: 10px;
+    background-color: rgb(57, 56, 56);
+    width: 80vw;
+  }
+  
+  /* Styling scrollbars for Webkit browsers */
+  .feed::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .feed::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* scrollbar track color */
+  }
+  
+  .feed::-webkit-scrollbar-thumb {
+    background-color: darkgrey; /* scrollbar color */
+    border-radius: 10px;
+  }
+  
+  /* Enhance scrollbar visibility/interaction only when it's active */
+  .feed:hover::-webkit-scrollbar-thumb {
+    background: grey;
+  }
+  
+
+.message {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    margin: 4px 0;
+    border-radius: 20px;
+    max-width: 60%;
+    word-wrap: break-word;
+    font-size: medium;
+}
+
+.prompt {
+    background-color: rgb(109, 78, 172);
+    align-self: flex-end;
+    margin-left: auto;
+    margin-bottom: 2vh;
+    max-width: 45%;
+    text-align: right;
+    width: fit-content
+}
+
+.response {
+    background-color: rgb(84, 81, 81);
+    align-self: flex-start;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    max-width: 45%;
+    text-align: left;
+    width: fit-content
+}
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    animation: blink 1.4s infinite both;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: .2;
+    }
+    50% {
+        opacity: 1;
+    }
+}

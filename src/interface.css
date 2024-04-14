@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 80vw;
+    height: 10vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.logo {
+    /* flex-grow: 1; */
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-circle {
+    background-color: rgb(109, 78, 172);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5vw;
+}
+
+.title-container {
+    flex-grow: 9;
+    text-align: left;
+}
+
+.title {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.upload-button {
+    background-color: rgb(148, 114, 222) !important;
+    border-color: rgb(148, 114, 222) !important;
+    padding: 10px 15px;
+    font-size: medium;
+}
+
+.upload-button:hover {
+    color: rgb(210, 198, 235) !important;
+}

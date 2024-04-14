@@ -1,0 +1,83 @@
+/* FileUploader.css */
+.upload-button-container {
+    margin-bottom: 10px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+/* .upload-button:hover {
+    background-color: #f8f9fa;
+} */
+
+.background {
+    border-top: 0.5px solid black;
+    text-align: center;
+    width: 70vw;
+    height: 35vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.buttons {
+margin-top: 15vh;
+}
+
+.video-icon {
+    font-size: 48px; /* Large icon size */
+}
+
+.video-name {
+    color: black;
+}
+
+.uploaded-container {
+    text-align: center;
+    
+}
+
+.loading {
+    color: black
+}
+
+.icon-circle {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 25vmin;
+    height: 25vmin;
+    background-color: white;
+    border-radius: 50%; /* Makes the circle */
+    border-color: black;
+    font-size: 24px; /* Adjust size of the icon */
+    text-align: center;
+}
+
+.icon-circle p {
+    margin-top: 10px; /* Spacing between the icon and text */
+    font-size: 20px; /* Smaller text for the description */
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.icon-circle:hover {
+    background-color: rgb(211, 193, 248);
+}
+
+.file-types {
+    margin-top: 2vh;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+.success {
+    margin-top: 5vh;
+}

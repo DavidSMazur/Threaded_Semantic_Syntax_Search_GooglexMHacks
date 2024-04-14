@@ -1,0 +1,104 @@
+/* TabBar.css */
+.tab-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+  }
+  
+  .tab {
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border-right: 1px solid gray;
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin-right: 3vw;
+    background-color: white;
+    border-radius: 10px;
+    
+
+  }
+
+  .tab:hover {
+    background-color:rgb(210, 198, 235)
+  }
+  
+  .tab:last-child {
+    border-right: none;
+    margin-right: 0px;
+  }
+
+ 
+
+  .tab:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .tab.active {
+    background-color: rgb(109, 78, 172);;
+    color: white;
+  }
+
+  .tab:last-child .active {
+    border-radius: 10px;
+  }
+
+  .tab-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .tab-name {
+    margin-right: 2vw;
+  }
+
+  .tab-logo {
+    font-size: larger;
+  }
+
+  .admin-bar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 8vh;
+    padding: 0.5vh;
+    border-bottom: 5px solid rgb(148, 114, 222);
+    margin-top: -10vh;
+  }
+  
+  .back-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust size as needed */
+    color: inherit; /* Inherits color from parent, change as necessary */
+    background-color: rgb(109, 78, 172) !important;
+    border-color: rgb(109, 78, 172) !important;;
+    text-align: right;
+  }
+
+  .back-button:hover {
+    background-color: rgb(148, 114, 222) !important;
+  }
+  
+:root {
+    --bs-primary: #6a0dad; /* Set primary color to your purple */
+}
+
+.up-button {
+    background-color: rgb(109, 78, 172) !important;
+    border-color: rgb(109, 78, 172) !important;;
+}
+.up-button:hover {
+    background-color: rgb(148, 114, 222) !important;
+  }
+  
