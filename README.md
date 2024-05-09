@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+**TSSS framework built in Private Repo**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inspiration
+We’ve dealt with the pain of learning large codebases for far too long. In the process of starting an open source project or onboarding for software engineering, one of the first tasks that a new developer goes through is learning the codebase which is a daunting and strenuous task; the large learning curve to large repos can have a significant impact on the productivity of not only the new engineer’s team, but ultimately the entire project or company. 
 
-## Available Scripts
+## What it does
+Our ground-breaking TSSS model provides both code and document search to aid the new developer. Our application utilizes two main interfaces. The first is a document upload interface which serves as a tool for a company to upload documents, videos, and the via a Github link, while the second has a chat-based look where you can ask TSSS about the uploaded material! 
 
-In the project directory, you can run:
+## How we built it
+Our TSSS search engine utilizes the vast capabilities of Gemini 1.5 to help developers. When you talk to our agent, we utilize Gemini’s function calling capabilities to choose which files for the LLM to process. Once we have decided which type you want to process, we go two ways: one to the documents and mp4s and one to the codebase functionalities. To be able to retrieve information from the large codebase, **redacted**. In addition, to search our documents and videos, we utilize the Gemini LLM’s models for video and text processing. In all, this allows for a seamless process for the user to simply ask a question either about the documents, videos, or code and receive a response explanation. 
 
-### `npm start`
+## Challenges we ran into
+Throughout this incredibly rewarding experience, we faced many challenges, mainly through navigating the rate limits of the API which reduced our speed in processing the code bases, even though we were able to multithread. Threading for model training was by far the hardest challenge we ran into and it was necessary for the hack taking training from weeks to hours.	
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Accomplishments that we're proud of
+Its function to pull information from github repositories that are over 20 million tokens long serves as a crucial aspect of our product that can exponentially cut the time for new developers to learn these massive codebases. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What we learned
+Through developing our application, we learned so much about the transformative impacts of the Gemini 1.5. We learned how to utilize this newfound API not only in document and video search but also in a threading semantic syntax search model to be used for developers in the future. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Project TSSS (Threaded Semantic Syntax Search)
+Although we were able to accomplish most of what we were set out to do, we want to scale this idea to become more readily accessible. With more time and development, we aim to create this idea into a vs-code or browser extension for developers to quickly access the meaning of their large codebases beyond a web application in addition to adding STT and TTS capabilities in order for even further ease. 
